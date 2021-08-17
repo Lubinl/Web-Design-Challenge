@@ -1,15 +1,66 @@
-a {
-    color: #000;
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    background: white;
+  }
+
+h1 {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    color:lightseagreen;
+    font-weight: 700;
+
 }
+
+h2 {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    color:lightseagreen;
+    font-weight: 700;
+}
+
+.navbar-brand{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-weight:700;
+}
+
+/* (Reference: https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color) */
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(161, 42, 42, 0.418)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+  }
+
+  /* (Reference:https://www.w3schools.com/cssref/sel_hover.asp) */
 a:hover {
-    color: #24ccff;
+    color: lightseagreen;
+    font-weight:700;
+  }
+
+  /* (Reference: https://stackoverflow.com/questions/25801122/change-bootstrap-navbar-dropdown-menu-hover-color/25801451) */
+.dropdown-menu > a:hover {
+    background-color:rgba(32, 178, 171, 0.459)!important;
+    color: white!important;
+
 }
 
-/* .center {
-    margin-left: auto;
-    margin-right: auto;
-  } */
+@media(max-width:767px){
+    body {
+        background: white!important;
+      }
 
-table {
-    margin:0px;
- }
+    .navbar.bg-light{
+        background-color: lightseagreen!important;
+        max-width: 100%!important;    
+    }
+
+    .navbar-toggler {
+        border-color: white!important;
+        
+    }
+
+    .navbar-collapse{
+        background-color: white!important;
+    }
+    nav {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+    }
+}
